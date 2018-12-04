@@ -1,0 +1,13 @@
+img#profileWallpaper {
+	width: 100%;
+}
+
+img#profilePicture {
+	margin: 10px;
+	position: relative;
+	float: left;
+	bottom: 13em;
+	width: 100%;
+	border: solid darkgrey 2px;
+}
+
