@@ -1,42 +1,84 @@
+div.profileHeader {
+	position: relative;
+}
+
 img#profileWallpaper {
 	width: 100%;
+	position: relative;
 }
 
-img#profilePicture {
+img#profilePicture {	
 	margin: 10px;
-	position: relative;
 	float: left;
-	bottom: 13em;
-	width: 100%;
 	border: solid darkgrey 2px;
 	height: 160px;
+	width: 160px;
+	position: absolute;	
+	bottom: 0;
+	left: 0em;
+		
 }
 
-@media only screen and (max-width: 760px) {
-	img#profilePicture {
-		bottom: 12em;
-		width: 150%;
+p#name {
+	position: absolute;
+	float: left;
+	font-size: 36px;
+	color: white;
+	bottom: 0px;
+	left: 5em;
+}
+
+div.card {
+	float: left;
+	border-radius: 10px;
+  	border: 1px solid gray;
+ 	padding: 20px; 
+	margin: 10px;
+  	min-height: 150px;	
+	background-color: #e7e7e7;
+
+} 
+
+div.card#about {
+	width: 30%; 
+}
+
+div.card#about h5.card-title {
+	font-size: 24px;	
+}
+
+div.card#createPost {
+	width: 40%;
+}
+
+
+
+@media only screen and (max-width: 760px) {	
+	p {
+		left: 2em;
 	}
 }
 
 @media only screen and (max-width: 600px) {
 	img#profilePicture {
-		bottom: 6em;
-		width: 150%;
 		height: 5em;		
+		width: 5em;
+	}
+	
+	p#name {			
+		left: 2.2em;
 	}
 }
 
-@media only screen and (max-width: 360px) {
-	img#profilePicture {
-		width: 200%;		
+@media only screen and (max-width: 360px) {	
+	p {
+		left: 2em;
 	}
 }
 
 @media only screen and (max-width: 300px) {
 	img#profilePicture {
-		bottom: 6em;
-		width: 150%;
 		height: 3em;
+		width: 3em;
 	}
 }
